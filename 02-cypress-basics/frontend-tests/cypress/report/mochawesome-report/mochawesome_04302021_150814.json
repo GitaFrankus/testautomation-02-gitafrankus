@@ -1,0 +1,187 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 4,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-04-30T13:07:57.124Z",
+    "end": "2021-04-30T13:08:14.113Z",
+    "duration": 16989,
+    "testsRegistered": 5,
+    "passPercent": 80,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a6e65654-d9c1-4355-90fa-2d66d88c8875",
+      "title": "",
+      "fullFile": "cypress/integration/regression-test-suite.spec.js",
+      "file": "cypress/integration/regression-test-suite.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4d9a7a86-db8b-4bf1-a97e-b64b899c2c15",
+          "title": "Test suite with Page-ojekts",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test case 1",
+              "fullTitle": "Test suite with Page-ojekts Test case 1",
+              "timedOut": null,
+              "duration": 2514,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://localhost:3000\");\nloginFuncs.cechLoginPageTitle();\nloginFuncs.performValdidLogin('tester01', 'GteteqbQQgSr88SwNExUQv2ydb7xuf8c', 'Welcome');\ndasbordFuncs.preformLogout('Login');",
+              "err": {},
+              "uuid": "75121e43-1b0f-41cb-b1ce-465869e49148",
+              "parentUUID": "4d9a7a86-db8b-4bf1-a97e-b64b899c2c15",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test case 2",
+              "fullTitle": "Test suite with Page-ojekts Test case 2",
+              "timedOut": null,
+              "duration": 3166,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://localhost:3000\");\nloginFuncs.cechLoginPageTitle();\nloginFuncs.performValdidLogin('tester01', 'GteteqbQQgSr88SwNExUQv2ydb7xuf8c', 'Welcome');\nroomFuncs.performValdidRoom('Rooms', 'Double', '3', '5', '356', 'sea_view', 'Rooms'); //dasbordFuncs.preformLogout('Login')",
+              "err": {},
+              "uuid": "426aeaaf-dd01-4ee9-bb47-e9beb1e25fdf",
+              "parentUUID": "4d9a7a86-db8b-4bf1-a97e-b64b899c2c15",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test case 3",
+              "fullTitle": "Test suite with Page-ojekts Test case 3",
+              "timedOut": null,
+              "duration": 4631,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://localhost:3000\");\nloginFuncs.cechLoginPageTitle();\nloginFuncs.performValdidLogin('tester01', 'GteteqbQQgSr88SwNExUQv2ydb7xuf8c', 'Welcome');\nclientFuncs.performValdidClient('Clients', 'Johan', 'Berg@gmail.com', '0734582738'); //dasbordFuncs.preformLogout('Login')",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `:nth-child(1) > input`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `:nth-child(1) > input`, but never found it.\n    at Object.performValdidLogin (http://localhost:3000/__cypress/tests?p=cypress/integration/regression-test-suite.spec.js:367:6)\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/regression-test-suite.spec.js:228:16)",
+                "diff": null
+              },
+              "uuid": "6587938b-cdb6-4352-8a0f-d32ccb40cdf7",
+              "parentUUID": "4d9a7a86-db8b-4bf1-a97e-b64b899c2c15",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test case 4",
+              "fullTitle": "Test suite with Page-ojekts Test case 4",
+              "timedOut": null,
+              "duration": 2424,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://localhost:3000\");\nloginFuncs.cechLoginPageTitle();\nloginFuncs.performValdidLogin('tester01', 'GteteqbQQgSr88SwNExUQv2ydb7xuf8c', 'Welcome');\nbillFuncs.performValdidBill('Bills', '456'); // dasbordFuncs.preformLogout('Login')",
+              "err": {},
+              "uuid": "28496191-0163-4770-8faa-4a8eabbe49dc",
+              "parentUUID": "4d9a7a86-db8b-4bf1-a97e-b64b899c2c15",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test case 5",
+              "fullTitle": "Test suite with Page-ojekts Test case 5",
+              "timedOut": null,
+              "duration": 3113,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://localhost:3000\");\nloginFuncs.cechLoginPageTitle();\nloginFuncs.performValdidLogin('tester01', 'GteteqbQQgSr88SwNExUQv2ydb7xuf8c', 'Welcome');\nReservFuncs.performValdidReserv('Reservations', '2021-06-15', '2021-06-20', 'Jonas Hellman (#1)', 'Floor 1, Room 101', 'ID: 1', 'Reservations'); //dasbordFuncs.preformLogout('Login')",
+              "err": {},
+              "uuid": "1e4f6121-fc20-4ce3-9217-3119463a007c",
+              "parentUUID": "4d9a7a86-db8b-4bf1-a97e-b64b899c2c15",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "75121e43-1b0f-41cb-b1ce-465869e49148",
+            "426aeaaf-dd01-4ee9-bb47-e9beb1e25fdf",
+            "28496191-0163-4770-8faa-4a8eabbe49dc",
+            "1e4f6121-fc20-4ce3-9217-3119463a007c"
+          ],
+          "failures": [
+            "6587938b-cdb6-4352-8a0f-d32ccb40cdf7"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 15848,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

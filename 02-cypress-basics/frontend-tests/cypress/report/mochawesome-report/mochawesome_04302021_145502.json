@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-04-30T12:54:58.898Z",
+    "end": "2021-04-30T12:55:02.465Z",
+    "duration": 3567,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5d2600e0-9ca9-476f-9048-ead44c8627ec",
+      "title": "",
+      "fullFile": "cypress/integration/regression-test-suite.spec.js",
+      "file": "cypress/integration/regression-test-suite.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bec73ef4-729f-4c74-9d5d-c099eba280cd",
+          "title": "Regression test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Perform valid login",
+              "fullTitle": "Regression test suite Perform valid login",
+              "timedOut": null,
+              "duration": 2485,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000');\ncy.title().should('include', 'Hotel');\ncy.contains('Login');\ncy.get(':nth-child(1) > input').type('tester01');\ncy.get(':nth-child(2) > input').type('GteteqbQQgSr88SwNExUQv2ydb7xuf8c');\ncy.get('.btn').click();\ncy.contains('Tester Hotel Overview');\ncy.get('.user > .btn').click();\ncy.contains('Login');",
+              "err": {},
+              "uuid": "771e30df-7e54-4f1d-9d28-4b79bc092a07",
+              "parentUUID": "bec73ef4-729f-4c74-9d5d-c099eba280cd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "771e30df-7e54-4f1d-9d28-4b79bc092a07"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2485,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}
